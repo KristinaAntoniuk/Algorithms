@@ -33,3 +33,10 @@ d:\Algorithms\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.Views.pdb
 d:\Algorithms\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.dll
 d:\Algorithms\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.pdb
 D:\Algorithms\Algorithms\obj\Debug\netcoreapp3.1\Algorithms.csproj.CopyComplete
+d:\Algorithms\Algorithms\obj\Debug\netcoreapp3.1\Razor\Views\Home\DynamicConnectivity.cshtml.g.cs
+d:\Algorithms\Algorithms\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
+d:\Algorithms\Algorithms\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
+d:\Algorithms\Algorithms\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+d:\Algorithms\Algorithms\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+d:\Algorithms\Algorithms\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+d:\Algorithms\Algorithms\obj\Debug\netcoreapp3.1\Razor\Views\Home\Image.cshtml.g.cs

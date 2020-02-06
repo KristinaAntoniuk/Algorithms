@@ -20526,6 +20526,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Algorithms\\Algorithms\\Views\\Home\\DynamicConnectivity.cshtml",
+      "TargetPath": "Views\\Home\\DynamicConnectivity.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Algorithms\\Algorithms\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -20533,6 +20538,11 @@
     {
       "FilePath": "d:\\Algorithms\\Algorithms\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Algorithms\\Algorithms\\Views\\Home\\Image.cshtml",
+      "TargetPath": "Views\\Home\\Image.cshtml",
       "FileKind": "mvc"
     }
   ],
