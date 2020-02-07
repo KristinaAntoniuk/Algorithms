@@ -20526,11 +20526,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "d:\\Algorithms\\Algorithms\\Views\\Home\\DynamicConnectivity.cshtml",
-      "TargetPath": "Views\\Home\\DynamicConnectivity.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "d:\\Algorithms\\Algorithms\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"

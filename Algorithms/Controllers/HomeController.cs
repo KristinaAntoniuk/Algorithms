@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Algorithms.Models;
@@ -10,7 +7,6 @@ using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 using System.IO;
-using System.Web;
 
 namespace Algorithms.Controllers
 {
@@ -35,6 +31,7 @@ namespace Algorithms.Controllers
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
+        
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
@@ -44,10 +41,15 @@ namespace Algorithms.Controllers
             return View();
         }
 
+        public ActionResult Sort()
+        {
+            DataModel model = new DataModel();
+            return View(model);
+        }
         public ActionResult Image()
         {
             var result = new InlineImageResult(200, 50);
-            result.Graphics.DrawString("Hello, World!", new Font("Verdana", 20, FontStyle.Regular, GraphicsUnit.Pixel), new SolidBrush(Color.Blue), 0, 0);
+            result.Graphics.DrawString("Graphic 1!", new Font("Verdana", 20, FontStyle.Regular, GraphicsUnit.Pixel), new SolidBrush(Color.Blue), 0, 0);
             return result;
         }
     }
@@ -87,7 +89,7 @@ namespace Algorithms.Controllers
                 this.bmp.Save(stream, format);
                 var img = String.Format("<img src=\"data:image/{0};base64,{1}\"/>", format.ToString().ToLower(), Convert.ToBase64String(stream.ToArray()));
                 byte[] data = System.Text.Encoding.UTF8.GetBytes(img);
-                context.HttpContext.Response.Body.Write(data);
+                context.HttpContext.Response.Body.WriteAsync(data);
             }
         }
     }
