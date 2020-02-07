@@ -41,9 +41,15 @@ namespace Algorithms.Controllers
             return View();
         }
 
-        public ActionResult Sort()
+        public ActionResult Sort(DataModel model)
         {
-            DataModel model = new DataModel();
+            model.Output = model.Input;
+            return View(model);
+        }
+
+        public ActionResult BubbleSort(DataModel model)
+        {
+            model.Output = model.Input;
             return View(model);
         }
         public ActionResult Image()

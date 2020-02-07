@@ -20521,6 +20521,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Algorithms\\Algorithms\\Views\\Home\\Sort.cshtml",
+      "TargetPath": "Views\\Home\\Sort.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Algorithms\\Algorithms\\Views\\Home\\BubbleSort.cshtml",
+      "TargetPath": "Views\\Home\\BubbleSort.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Algorithms\\Algorithms\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
