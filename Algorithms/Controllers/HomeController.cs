@@ -31,7 +31,7 @@ namespace Algorithms.Controllers
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
-        
+
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
@@ -49,8 +49,33 @@ namespace Algorithms.Controllers
 
         public ActionResult BubbleSort(DataModel model)
         {
+            string[] input = model.Input.Split(" ");
+            int[] array = new int[input.Length];
+            int index = 0;
+            Array.ForEach(input, x => { Int32.TryParse(x, out array[index]); index++; });
+
+            for (int i = 0; i < array.Length; i++)
+            {
+                for (int j = 0; j < array.Length; j++)
+                {
+                    if (array[j] > array[i])
+                    {
+                        int temp = array[j];
+                        array[j] = array[i];
+                        array[i] = temp;
+                    }
+                }
+            }
+
+            model.Output = array.StringOutput();
+
+            return View("~/Views/Home/Sort.cshtml", model);
+        }
+
+        public ActionResult MergeSort(DataModel model)
+        {
             model.Output = model.Input;
-            return View(model);
+            return View("~/Views/Home/Sort.cshtml", model);
         }
         public ActionResult Image()
         {
