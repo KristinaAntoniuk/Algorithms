@@ -1,0 +1,36 @@
+﻿@model DynamicConnectivityModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Dynamic Connectivity</h1>
+
+@using (Html.BeginForm())
+{
+    @Html.TextBoxFor(m => m.elementsCount, new { @class = "form-control" })
+
+    <hr />
+
+    @Html.TextAreaFor(m => m.unions, new { @class = "form-control" })
+
+    <br />
+    <p>
+
+        <div>
+            @{
+                if (Model.collection != null)
+                {
+                    @await Component.InvokeAsync("Graphic", new { nodes = Model.collection })
+                }
+            }
+        </div>
+
+    </p>
+
+    <input type = "submit" value = "Process" class="btn btn-primary"/>
+}
+
+
+
+
