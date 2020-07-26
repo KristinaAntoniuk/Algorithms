@@ -12,6 +12,5 @@ namespace Algorithms.Models
         public int firstNode { get; set; }
         public int secondNode { get; set; }
         public bool connected { get; set; }
-        public InlineImageResult graphic { get; set; }
     }
 }
